@@ -29,3 +29,104 @@
 .rojo .sc-ion-action-sheet-md {
 	color: red !important;
 }
+
+.animated {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+.animate__animated.animate__infinite {
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+.animate__animated.animate__slow {
+	-webkit-animation-duration: calc(1s * 2);
+	animation-duration: calc(1s * 2);
+	-webkit-animation-duration: calc(var(--animate-duration) * 2);
+	animation-duration: calc(var(--animate-duration) * 2);
+}
+
+.animated.fast {
+	-webkit-animation-duration: 400ms;
+	animation-duration: 400ms;
+}
+
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.fadeIn {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+
+@-webkit-keyframes flash {
+	from,
+	50%,
+	to {
+		opacity: 1;
+	}
+
+	25%,
+	75% {
+		opacity: 0.5;
+	}
+}
+@keyframes flash {
+	from,
+	50%,
+	to {
+		opacity: 1;
+	}
+
+	25%,
+	75% {
+		opacity: 0.5;
+	}
+}
+.animate__flash {
+	-webkit-animation-name: flash;
+	animation-name: flash;
+}
+
+@-webkit-keyframes fadeOut {
+	from {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
+	}
+}
+@keyframes fadeOut {
+	from {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
+	}
+}
+.animate__fadeOut {
+	-webkit-animation-name: fadeOut;
+	animation-name: fadeOut;
+}
